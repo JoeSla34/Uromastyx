@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Uromastyx: The Ultimate Desert Companion?</title>
+  <meta name="description" content="Complete beginner-to-intermediate guide for prospective Uromastyx owners: biology, enclosure, diet, health, costs, comparisons, and care checklist."/>
+  <style>
+    :root{
+      --accent:#c76f2b;
+      --muted:#6b6b6b;
+      --bg:#fbfbfb;
+      --card:#ffffff;
+      --maxwidth:1100px;
+      --radius:10px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#222;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, #fff 0%, #fbfbfb 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:24px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--maxwidth);
+    }
+    header{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    .logo{
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(15,15,15,0.06);
+      padding:10px 14px;
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .logo h1{margin:0;font-size:1.2rem;color:var(--accent);}
+    .tag{color:var(--muted);font-size:0.9rem;}
+    nav{
+      margin-left:auto;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    nav a{
+      text-decoration:none;
+      color:var(--accent);
+      padding:8px 12px;
+      border-radius:8px;
+      background:transparent;
+      font-weight:600;
+    }
+    nav a:hover{background:rgba(199,111,43,0.08);}
+    .hero{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:0 8px 30px rgba(12,12,12,0.05);
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:18px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    .hero h2{margin:0 0 8px 0;}
+    .hero p{margin:0;color:var(--muted);}
+    .cta{
+      margin-top:12px;
+      display:inline-block;
+      background:var(--accent);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+    }
+    .img-stack{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+    .img-stack img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-radius:8px;
+      display:block;
+    }
+    main{display:grid;grid-template-columns:1fr 320px;gap:18px;}
+    section.card{
+      background:var(--card);
+      padding:16px;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(15,15,15,0.03);
+    }
+    .side{
+      position:sticky;
+      top:24px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    h3{margin-top:0;}
+    ul{margin:8px 0 16px 20px;}
+    .badge{display:inline-block;background:#f6f2ea;color:#5a3a22;padding:6px 8px;border-radius:999px;font-weight:700;font-size:0.9rem;}
+    .keypoints{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+    .point{background:#fff7f0;border:1px solid rgba(199,111,43,0.08);padding:10px;border-radius:10px;}
+    table{width:100%;border-collapse:collapse;margin-top:8px;}
+    td,th{padding:8px;border-bottom:1px solid #eee;text-align:left;}
+    .small{font-size:0.9rem;color:var(--muted);}
+    footer{margin-top:20px;padding:20px;text-align:center;color:var(--muted);font-size:0.9rem;}
+    .compare{display:flex;flex-direction:column;gap:8px;}
+    .costs{display:flex;gap:8px;flex-wrap:wrap;}
+    .costs .card{flex:1;min-width:140px;}
+    .checklist{display:flex;flex-direction:column;gap:8px;}
+    .pill{display:inline-block;background:#eef7ff;color:#035; padding:6px 10px;border-radius:8px;font-weight:700;}
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      main{grid-template-columns:1fr;}
+      nav{margin-left:0;justify-content:flex-start;}
+      .img-stack img{height:120px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="logo" aria-hidden="false">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="22" height="22" rx="6" fill="#fff2e8"/>
+          <path d="M7 14c0-3 3-6 7-6" stroke="#c76f2b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="16.5" cy="8" r="2" fill="#c76f2b"/>
+        </svg>
+        <div>
+          <h1>Uromastyx: Desert Companion</h1>
+          <div class="tag small">A practical care guide for prospective owners</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#intro">Home</a>
+        <a href="#why">Why Uromastyx</a>
+        <a href="#habitat">In the Wild</a>
+        <a href="#enclosure">Enclosure</a>
+        <a href="#diet">Diet & Supplements</a>
+        <a href="#health">Health</a>
+        <a href="#costs">Costs</a>
+        <a href="#compare">Compare</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <div class="hero" id="intro">
+      <div>
+        <h2><strong>Uromastyx:</strong> The Ultimate Desert Companion?</h2>
+        <p class="small">
+          <strong>Uromastyx</strong> (spiny-tailed lizards) are diurnal, primarily herbivorous desert reptiles with calm temperaments and fascinating behaviour.
+          This site helps you decide if a Uromastyx is right for you and how to care for one properly.
+        </p>
+
+        <div style="margin-top:12px;">
+          <span class="badge">Beginner → Intermediate</span>
+          <span style="margin-left:10px;" class="small">Average rating: <strong>3.2 / 5</strong> (reflects specific care needs, not overall value)</span>
+        </div>
+
+        <a class="cta" href="#enclosure">Explore Our Care Guide</a>
+      </div>
+
+      <aside class="img-stack" aria-hidden="false">
+        <!-- inline placeholders for images (replace srcs with your own files/URLs) -->
+        <img src="https://images.unsplash.com/photo-1555685812-4b943f1dcaab?auto=format&fit=crop&w=800&q=60" alt="Uromastyx basking on a rock">
+        <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=800&q=60" alt="Close-up of a spiny-tailed lizard">
+      </aside>
+    </div>
+
+    <main>
+      <div>
+
+        <!-- WHY -->
+        <section class="card" id="why" aria-labelledby="why-title">
+          <h3 id="why-title">Why a Uromastyx is a Great Pet</h3>
+          <p class="small"><strong>Tone:</strong> professional, enthusiastic, and practical. Key benefits at a glance:</p>
+
+          <div class="keypoints" role="list">
+            <div class="point" role="listitem">
+              <strong>Calm & Handleable</strong>
+              <ul>
+                <li><strong>Docile and deliberate</strong> — slow movers, typically not prone to sudden dashes.</li>
+                <li><strong>Sturdy size</strong> — tough but manageable to support and interact with.</li>
+                <li><strong>Dont drop tails</strong> — unlike some lizards, tail loss is not common behavior.</li>
+              </ul>
+            </div>
+
+            <div class="point" role="listitem">
+              <strong>Herbivorous Convenience</strong>
+              <ul>
+                <li><strong>Plant-based diet</strong> — leafy greens, veggies, and seeds; no need for frequent live-insect feeding.</li>
+                <li><strong>Clean waste</strong> — compact, dry feces that are easier to keep clean.</li>
+              </ul>
+            </div>
+
+            <div class="point" role="listitem">
+              <strong>Diurnal & Engaging</strong>
+              <ul>
+                <li>Active during the day — you'll observe natural behavior while awake.</li>
+                <li>Long lifespan — plan for <strong>15–20+ years</strong> when cared for properly.</li>
+              </ul>
+            </div>
+
+            <div class="point" role="listitem">
+              <strong>Low Daily Maintenance</strong>
+              <ul>
+                <li>Once setup is correct, daily tasks are mostly feeding and spot cleaning.</li>
+                <li>Great for owners who prefer structured, predictable care routines.</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="small" style="margin-top:12px;">
+            <strong>Quick note:</strong> their long-term commitment and specific heating/UV needs make a proper initial setup essential.
+          </p>
+        </section>
+
+        <!-- IN THE WILD -->
+        <section class="card" id="habitat" aria-labelledby="habitat-title" style="margin-top:12px;">
+          <h3 id="habitat-title">Uromastyx in the Wild — Understanding Their Needs</h3>
+
+          <ul>
+            <li><strong>Native range:</strong> North Africa, the Middle East, and parts of South Asia — typically rocky, arid areas and stony deserts.</li>
+            <li><strong>Climate:</strong> Hot, dry days; cool nights. Wild surface temperatures can be very high (use secure basking spots in captivity).</li>
+            <li><strong>Ground composition:</strong> Firm, compact substrate with rocks and pebbles — they dig stable burrows in compact soils (not loose dune sand).</li>
+            <li><strong>Behaviour:</strong> Basking is critical for digestion and activity; they dig burrows for thermal refuge and hide from predators; the spiny tail is a defensive tool and fat reserve.</li>
+            <li><strong>Hydration:</strong> Primarily obtain water from the plants they eat; many rarely drink standing water.</li>
+          </ul>
+        </section>
+
+        <!-- ENCLOSURE -->
+        <section class="card" id="enclosure" aria-labelledby="enclosure-title" style="margin-top:12px;">
+          <h3 id="enclosure-title">Enclosure Setup — Creating Their World</h3>
+
+          <h4><strong>Size</strong></h4>
+          <ul>
+            <li><strong>Minimum:</strong> 120 cm × 60 cm × 60 cm (≈ 4×2×2 feet) for a single adult — bigger is better.</li>
+            <li>Large space allows for a proper temperature gradient and enrichment.</li>
+          </ul>
+
+          <h4><strong>Heating & Temperature</strong></h4>
+          <ul>
+            <li><strong>Basking spot:</strong> 40–45°C (104–113°F) air; surface temps of basking rocks often substantially hotter — verify with an infrared thermometer.</li>
+            <li><strong>Cool side:</strong> 25–30°C (77–86°F).</li>
+            <li><strong>Night:</strong> Can fall to ~20–24°C (68–75°F), try to keep above 18°C (64.4°F).</li>
+            <li><strong>Equipment:</strong> high-output basking bulbs (halogen or ceramic), a good thermostat (pulse-proportional), and temperature monitors.</li>
+          </ul>
+
+          <h4><strong>Lighting</strong></h4>
+          <ul>
+            <li><strong>UVB:</strong> Full-spectrum UVB (T5 HO or equivalent) is essential — supports calcium metabolism and prevents metabolic bone disease.</li>
+            <li><strong>Cycle:</strong> 10–12 hour day cycle; replace UVB bulbs as recommended (typically every 6–12 months depending on the product).</li>
+          </ul>
+
+          <h4><strong>Humidity & Water</strong></h4>
+          <ul>
+            <li>Maintain low humidity (20–40%).</li>
+            <li>A shallow water dish can be offered but many Uromastyx will not drink frequently; most hydration comes from diet.</li>
+          </ul>
+
+          <h4><strong>Substrate</strong></h4>
+          <ul>
+            <li>Use a deep (10–15 cm / 4–6 in) substrate that holds shape for burrowing: mix of play sand, clay (excavator clay), and topsoil or coconut coir.</li>
+            <li>Avoid fine, loose dune sand and calcium sands that can cause impaction if ingested.</li>
+          </ul>
+
+          <h4><strong>Decor & Enrichment</strong></h4>
+          <ul>
+            <li>Flat, heat-retaining basking rocks or slates (must be stable and secured).</li>
+            <li>Multiple hides on warm and cool sides to allow choice and refuge.</li>
+            <li>Climbing ledges, branches, and varied terrain to encourage natural behaviors.</li>
+            <li>Shallow food bowls and low water dishes.</li>
+          </ul>
+        </section>
+
+        <!-- DIET -->
+        <section class="card" id="diet" aria-labelledby="diet-title" style="margin-top:12px;">
+          <h3 id="diet-title">Diet & Supplements</h3>
+
+          <p class="small"><strong>Daily diet:</strong> A diverse mix of leafy greens, vegetables, and seeds forms the core of most captive Uromastyx diets.</p>
+
+          <ul>
+            <li><strong>Leafy greens:</strong> collard greens, dandelion, endive, mustard greens, rocket (arugula).</li>
+            <li><strong>Vegetables:</strong> squash, bell peppers (use variety).</li>
+            <li><strong>Seeds:</strong> millet, lentils, birdseed mixes (avoid sunflower-heavy mixes).</li>
+            <li><strong>Treats:</strong> small amounts of fruit or legumes occasionally.</li>
+            <li><strong>Avoid:</strong> iceberg lettuce (nutritionally poor); large quantities of high-oxalate greens like spinach or broccoli (bind calcium).</li>
+            <li><strong>Insects:</strong> very minor or optional for some species/individuals — not a staple.</li>
+          </ul>
+
+          <h4>Supplements</h4>
+          <ul>
+            <li>Dust food with calcium powder (without D3) 2–3× per week if UVB is adequate.</li>
+            <li>Multivitamin supplements occasionally; avoid regular over-supplementation.</li>
+          </ul>
+
+          <p class="small"><strong>Tip:</strong> rotate greens to ensure dietary variety and monitor weight/condition regularly.</p>
+        </section>
+
+        <!-- HANDLING -->
+        <section class="card" id="handling" style="margin-top:12px;">
+          <h3>Handling & Interaction</h3>
+          <ul>
+            <li><strong>Acclimation:</strong> allow several weeks before frequent handling.</li>
+            <li>Approach slowly, support body and tail, and avoid sudden movements.</li>
+            <li>Short initial sessions (5–10 minutes) — build trust gradually.</li>
+            <li>Uromastyx may prefer snug places while being handled; mirror their natural refuge-seeking behavior.</li>
+            <li>Positive reinforcement (food) helps encourage desired behaviours.</li>
+          </ul>
+        </section>
+
+        <!-- HEALTH -->
+        <section class="card" id="health" aria-labelledby="health-title" style="margin-top:12px;">
+          <h3 id="health-title">Health & Wellness</h3>
+          <h4>Common issues</h4>
+          <ul>
+            <li><strong>Metabolic Bone Disease (MBD):</strong> caused by inadequate UVB or calcium — prevention is straightforward with proper UVB and supplements.</li>
+            <li><strong>Respiratory infections:</strong> linked to high humidity and low temperatures.</li>
+            <li><strong>Impaction:</strong> caused by ingesting improper substrate—avoid loose sand.</li>
+            <li><strong>Shed retention:</strong> may require monitoring and humidity adjustments for stuck sheds.</li>
+          </ul>
+
+          <h4>Monitoring & Vet Care</h4>
+          <ul>
+            <li>Watch for lethargy, poor appetite, abnormal stools, weight loss, or difficulty shedding.</li>
+            <li>Find a reptile-experienced veterinarian for regular checks and if any illness signs appear.</li>
+          </ul>
+        </section>
+
+        <!-- COSTS -->
+        <section class="card" id="costs" aria-labelledby="costs-title" style="margin-top:12px;">
+          <h3 id="costs-title">Availability & Costs</h3>
+
+          <h4>Availability</h4>
+          <ul>
+            <li>Commonly available from reputable breeders and specialty stores; captive-bred individuals are preferred over wild-caught.</li>
+            <li>Some species may be region-restricted; check local regulations and breeder reputation.</li>
+          </ul>
+
+          <h4>Upfront costs (typical estimates)</h4>
+          <table>
+            <thead>
+              <tr><th>Item</th><th>Typical Price Range</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Uromastyx (juvenile, captive-bred)</td><td>€150–€300</td></tr>
+              <tr><td>Enclosure (tank / custom vivarium)</td><td>€150–€400</td></tr>
+              <tr><td>High-output basking bulb & fixture</td><td>€30–€90</td></tr>
+              <tr><td>UVB tube (T5 HO) & fixture</td><td>€40–€120</td></tr>
+              <tr><td>Thermostat, temp gun, hides, decor</td><td>€100–€300</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Ongoing costs (annual)</h4>
+          <div class="costs">
+            <div class="card costs-card card" style="padding:10px;border-radius:8px;">
+              <strong>Food</strong><div class="small">€25–€40 / month</div>
+            </div>
+            <div class="card costs-card card" style="padding:10px;border-radius:8px;">
+              <strong>Bulb replacements</strong><div class="small">€80–€120 / year</div>
+            </div>
+            <div class="card costs-card card" style="padding:10px;border-radius:8px;">
+              <strong>Electricity</strong><div class="small">€150–€240 / year (varies by region)</div>
+            </div>
+          </div>
+
+          <p class="small" style="margin-top:8px;"><strong>Estimated initial setup:</strong> €740–€1,290 (depending on enclosure and equipment choices). <strong>Estimated annual maintenance:</strong> ≈ €500–€750.</p>
+          <p class="small"><strong>Note:</strong> costs vary by country, supplier, and energy prices; treat these as conservative estimates.</p>
+        </section>
+
+        <!-- COMPARE -->
+        <section class="card" id="compare" aria-labelledby="compare-title" style="margin-top:12px;">
+          <h3 id="compare-title">Uromastyx vs. Other Popular Lizards</h3>
+          <p class="small">Short comparisons focused on the aspects that matter to new keepers.</p>
+
+          <div class="compare">
+            <div><strong>Uromastyx vs. Leopard Gecko</strong> — Uromastyx are diurnal and herbivorous with higher heat and UVB needs; leopard geckos are nocturnal and insectivorous with lower UV requirements.</div>
+            <div><strong>Uromastyx vs. Bearded Dragon</strong> — both diurnal and easy to handle, but Uromastyx prefer drier conditions and are more herbivorous; bearded dragons eat more protein and tolerate slightly higher humidity.</div>
+            <div><strong>Uromastyx vs. Blue-Tongued Skink</strong> — skinks are omnivorous, often heavier feeders, and tolerate more varied habitats; Uromastyx specialise in dry, hot setups.</div>
+            <div class="small">Choose based on diet preference, room climate control, and how much time you can invest in heating/UV setup.</div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="card" id="faq" aria-labelledby="faq-title" style="margin-top:12px;">
+          <h3 id="faq-title">FAQ — Quick Answers</h3>
+          <dl>
+            <dt><strong>Are Uromastyx good for beginners?</strong></dt>
+            <dd class="small">They are suitable for beginner→intermediate keepers who are willing to invest in proper heating and UV setup. Not a fully "beginner" pet due to specific thermal & lighting needs.</dd>
+
+            <dt><strong>Do they need water bowls?</strong></dt>
+            <dd class="small">A shallow bowl can be offered, but many get most hydration from food. Keep humidity low.</dd>
+
+            <dt><strong>How long do they live?</strong></dt>
+            <dd class="small">With good care, 15–20+ years is common; some live longer.</dd>
+
+            <dt><strong>Can I keep more than one?</strong></dt>
+            <dd class="small">Multiple adults may establish territories—careful introduction and large enclosures are essential. Typically keep single adult per enclosure unless housing is designed for multiple compatible individuals.</dd>
+          </dl>
+        </section>
+
+        <!-- Printable Checklist -->
+        <section class="card" style="margin-top:12px;">
+          <h3>Printable Care Checklist</h3>
+          <div class="checklist small">
+            <label><input type="checkbox"> Confirm local legality & source from captive-bred breeder</label>
+            <label><input type="checkbox"> Enclosure ≥ 120×60×60 cm</label>
+            <label><input type="checkbox"> High-output basking lamp + thermostat</label>
+            <label><input type="checkbox"> Full-spectrum UVB (T5 HO) + 10–12h timer</label>
+            <label><input type="checkbox"> Deep substrate mix for burrowing</label>
+            <label><input type="checkbox"> Variety of leafy greens & seed mix available</label>
+            <label><input type="checkbox"> Vet identified for reptiles</label>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="side" aria-label="Sidebar">
+        <div class="card" role="complementary">
+          <h4>Quick Specs</h4>
+          <table>
+            <tbody>
+              <tr><th>Activity</th><td>Diurnal</td></tr>
+              <tr><th>Diet</th><td>Primarily herbivorous</td></tr>
+              <tr><th>Temp (bask)</th><td>40–45°C air, hotter surface</td></tr>
+              <tr><th>Humidity</th><td>20–40%</td></tr>
+              <tr><th>Life span</th><td>15–20+ years</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card">
+          <h4>Starter Equipment Checklist</h4>
+          <ul class="small">
+            <li>Enclosure (glass or custom wooden vivarium)</li>
+            <li>100–150W high-output basking lamp or ceramic heater</li>
+            <li>T5 HO UVB tube + fixture</li>
+            <li>Thermostat (pulse proportional)</li>
+            <li>Infrared thermometer / temp gun</li>
+            <li>Hides, basking rocks, substrate mix</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Costs at a glance</h4>
+          <div class="small">
+            <strong>Initial:</strong> from ~€740<br/>
+            <strong>Annual:</strong> ~€500–€750
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Call to action</h4>
+          <p class="small">Ready to learn more? <a href="#enclosure" class="pill">Explore the enclosure guide</a></p>
+          <p style="margin-top:8px;"><a href="#contact" class="small">Contact a breeder or local reptile vet</a></p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="small">
+        <strong>Note:</strong> This guide is informational and condensed. For species-specific nuances and advanced husbandry (e.g., breeding, rare species care), consult experienced breeders, reptile veterinarians, and detailed care sheets.
+      </div>
+      <div style="margin-top:8px;">&copy; <strong>Uromastyx Care Guide</strong> — Built for prospective keepers</div>
+    </footer>
+  </div>
+
+  <!-- Optional: small script to enable printable checklist toggles and smooth scrolling -->
+  <script>
+    // smooth scrolling for in-page links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
